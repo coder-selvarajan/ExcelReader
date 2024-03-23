@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Excel Viewer</title>
+    <style>
+        /* Basic styling */
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            margin: 0 5px;
+            background: #ddd;
+            display: inline-block;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab.active {
+            background: #fff;
+        }
+        .sheet-container {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="input-excel" accept=".xlsx, .xls" />
+    <div id="tabs"></div>
+    <div id="sheets"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+
+    <br/>
+    <br/>
+    <iframe src="https://onedrive.live.com/embed?resid=29BE02EB4A8146C8%214798&authkey=!AFx4eD5Jx214lew&em=2" width="902" height="646" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>
